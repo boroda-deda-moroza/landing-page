@@ -1,0 +1,41 @@
+.section__offer {
+  padding-bottom: 95px;
+  padding-top: 95px;
+  margin-bottom: 200px;
+  background-image: url(../../images/offer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1200px) {
+    margin-bottom: 140px;
+  }
+
+  .offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__title {
+      margin-bottom: 12px;
+      font-weight: 500;
+      font-size: 26px;
+      text-align: center;
+      color: #fff;
+    }
+    &__text {
+      margin-bottom: 30px;
+      font-size: 14px;
+      line-height: 171%;
+      color: $textColor;
+    }
+    &__btn {
+      border: none;
+
+      &:hover {
+        background-color: rgb(160, 15, 15);
+        color: #fff;
+      }
+    }
+  }
+}
